@@ -36,6 +36,7 @@ backdrop-filter: blur(7.7px);
 }
 
 .keys:hover{
+    color: rgb(31, 27, 27);
     border: none;
     transform: translate(0px, 5px);
 }
