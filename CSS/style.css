@@ -6,11 +6,17 @@
 /* output */
 #output{
     border-bottom: 5px solid gray;
-    background-color: cyan;
+   /* From https://css.glass */
+background: rgba(37, 166, 173, 0.22);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.7px);
+-webkit-backdrop-filter: blur(7.7px);
     position: relative;
     top: 10px;
     font-size: 30px;
     border-radius: 20px;
+    color: white;
 }
 
 .keys{
