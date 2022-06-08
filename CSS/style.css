@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* output */
+#output{
+    border: 2px solid gray;
+    background-color: cyan;
+    position: relative;
+    top: 10px;
+    font-size: 30px;
+    border-radius: 20px;
+}
+
+.keys{
+    border-bottom: 5px solid #4f0909;
+    position: relative;
+    top: 20px;
+    width: 10%;
+    border-radius: 20px;
+    font-size: 50px;
+    transition: all 0.2s ease-in-out;
+}
+
+.keys:hover{
+    border: none;
+    transform: translate(0px, 5px);
+}
+
+#calculator{
+  width: 60%;
+  background-color: black;
+
+  position: relative;
+  left: 20%;
+  padding-bottom: 20px;
+  border-radius: 20px;
+}

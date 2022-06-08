@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- bootstrap css --><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<!-- personal css -->
+<link rel="stylesheet" href="./CSS/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<section id="calculator">   
+    <div class="container text-center flex-wrap">
+        <div class="row flex-column">
+            <!-- textarea -->
+            <div class="col-sm-12">
+<textarea id="output" cols="50" rows="3" placeholder="Hello!"></textarea>
+            </div>
+<!-- row1 -->
+            <div class="col-sm-12 p-2">
+<button onclick="delchar('')" class="keys">C</button>
+<input type="button" value="/" class="keys" onClick="addchar(' / ')"></input>
+<input type="button" value="X" class="keys" onClick="addchar(' * ')"></input>
+<button onclick="delchar(' ')" class="keys"><i class="fa-solid fa-delete-left"></i></button>
+            </div>
+<!-- row2 -->
+            <div class="col-sm-12 p-2">
+                <button onclick="addchar('7')"  class="keys">7</button>
+                <button onclick="addchar('8')" class="keys">8</button>
+                <button onclick="addchar('9')" class="keys">9</button>
+                <input type="button" value="-" class="keys" onClick="addchar(' - ')"></input>
+            </div>
+<!-- row3 -->
+            <div class="col-sm-12 p-2">
+<button onclick="addchar('4')" class="keys">4</button>
+<button onclick="addchar('5')" class="keys">5</button>
+<button onclick="addchar('6')" class="keys">6</button>
+<button onclick="addchar(' + ')" class="keys">+</button>
+            </div>
+<!-- row4 -->
+            <div class="col-sm-12 p-2">
+<button onclick="addchar('1')" class="keys">1</button>
+<button onclick="addchar('2')" class="keys">2</button>
+<button onclick="addchar('3')" class="keys">3</button>
+<input type="button" value="=" class="keys equal-sign" onClick="solve()"></input>
+            </div>
+<!-- row5 -->
+            <div class="col-sm-12 p-2">
+<button onclick="addchar(' % ')" class="keys">%</button>
+<button onclick="addchar('0')" class="keys">0</button>
+<button onclick="addchar('.')" class="keys">,</button>
+            </div>
+
+        </div>
+    </div>
+
+</section> 
+
+    <!-- links -->
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+    <!-- personal js -->
+    <script src="./JAVA/code.js"></script>
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/94eb56d79c.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
