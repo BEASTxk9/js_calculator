@@ -17,6 +17,12 @@ backdrop-filter: blur(7.7px);
     font-size: 30px;
     border-radius: 20px;
     color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+#output:hover{
+    border: none;
+    transform: translate(0px, 5px);
 }
 
 .keys{
